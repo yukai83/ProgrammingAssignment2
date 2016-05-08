@@ -30,7 +30,7 @@ cacheSolve <- function(x, ...) {           ## Return a matrix that is the invers
   }
   data <- x$get()
   m_inv <- solve(data, ...)                ## Calculate the inverted matrix
-  x$setinverse(inv)
+  x$setinverse(m_inv)
   m_inv
 }
   
